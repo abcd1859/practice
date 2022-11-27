@@ -100,6 +100,46 @@ Member2=Members.new(2,"Jean");
 Member1.printer();
 Member2.printer();
 
+$age=18
+
+case $age
+ when 0..2
+    puts "infant"
+ when 3..6
+    puts "1st class"
+ when 7..9
+    puts "second class"
+ when 10..12
+    puts "third class"
+ when 13..18
+    puts "12th class"
+ else
+    puts "not allowed"
+ end
+
+ if $age>=1 && $age<=2
+    puts "if infant"
+ elsif $age>=3 && $age<=6
+    puts "if first class"
+ elsif $age>=13 && $age<=18
+    puts "if 12th class"
+ else
+    puts "not allowed"
+ end
+
+ $age>=0 and $age<=18 ?
+  ($age>=0 and $age<=2 ? 
+     (puts "ternary infant") :
+      ($age>=3 and $age<=6 ?
+         (puts "ternary first class") :
+          ($age >=13 and $age<=18 ?
+             (puts "ternary 12th class") :
+              (puts "not allowed")) ) )
+              : (puts "not allowed")
+
+
+
+
 
 
 
