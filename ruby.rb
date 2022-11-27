@@ -69,3 +69,38 @@ arr = ["abhishek",45,]
 hash = {1=>"yellow" , 2=>"red"}
 
 puts "hello" if x==1  #ruby if mmodifier
+
+
+unless x<2
+    puts "hello x"
+else
+    puts "bie x"    #unless operator 
+end
+
+if x< 2
+    puts "x is less then 2"
+elsif x==2
+    puts "hello abhishek"
+else
+    puts "bieeee"
+end
+
+class Members
+    @@total=0 # class variable
+    def initialize(id , name)
+        @member_id=id  #instance variable
+        @member_name=name
+    end
+    def printer()
+        puts "#@member_id name = #@member_name"
+    end
+end
+Member1=Members.new(1,"abhishek"); #creating object
+Member2=Members.new(2,"Jean");
+Member1.printer();
+Member2.printer();
+
+
+
+
+
