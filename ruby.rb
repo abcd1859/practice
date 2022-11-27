@@ -31,3 +31,41 @@ END{
 Multiline comment 
 
 =end
+=begin
+if p Wagnar.vahicle_id < 1
+    puts "vahicle found"
+end
+=end
+=begin
+x = 1
+if x > 2
+   puts "x is greater than 2"
+elsif x <= 2 and x!=0
+   puts "x is 1"
+else
+   puts "I can't guess the number"
+end
+=end
+
+
+
+x = 1
+
+if x > 1
+    puts "x < 1"
+elsif x == 1
+    puts "x==1"
+else
+    puts "x>1"
+end
+
+y=2
+
+z = (y == 2 and x==4) ? ( "#$global_variable and #y ") : ( "false")
+
+puts z
+
+arr = ["abhishek",45,]
+hash = {1=>"yellow" , 2=>"red"}
+
+puts "hello" if x==1  #ruby if mmodifier
