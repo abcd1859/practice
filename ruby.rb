@@ -109,7 +109,7 @@ case $age
     puts "1st class"
  when 7..9
     puts "second class"
- when 10..12
+ when 10..12           #case 
     puts "third class"
  when 13..18
     puts "12th class"
@@ -121,7 +121,7 @@ case $age
     puts "if infant"
  elsif $age>=3 && $age<=6
     puts "if first class"
- elsif $age>=13 && $age<=18
+ elsif $age>=13 && $age<=18  #if elsif
     puts "if 12th class"
  else
     puts "not allowed"
@@ -129,7 +129,7 @@ case $age
 
  $age>=0 and $age<=18 ?
   ($age>=0 and $age<=2 ? 
-     (puts "ternary infant") :
+     (puts "ternary infant") :  #ternary operator
       ($age>=3 and $age<=6 ?
          (puts "ternary first class") :
           ($age >=13 and $age<=18 ?
@@ -139,8 +139,101 @@ case $age
 
 
 
+def addition(x,y)
+    return x+y
+end
+
+def subtraction(x,y)
+    return x-y
+end
+
+def multiply(x,y)
+    return x*y
+end
 
 
+x1=multiply(3,subtraction(addition(2,2),2))
+puts "#x1"
+$i=1
+while $i < 5 do
+    puts "#$i"
+    $i+=1
+end
+puts "#$i outside while loop"
+
+for $i in 5..10 do
+    puts "#$i in for loop"
+end
+
+(10..15).each do |i|
+    puts "#{i} in each loop"
+end
+
+
+$s=1
+$z=1
+while $z<=3 do
+    for $s in 1..3 
+         print "* "
+    end
+    puts "\n"
+    $z+=1
+end
+
+$r=1
+$t=1
+n=3
+
+=begin
+for $t in 1..$n
+    r=0
+    for r in r<=($n*2-1)
+            
+            if($t==1 and r==$n)
+                print "*"
+            else
+                print "1"
+            end
+        end
+end
+
+=end
+for i in 1..n do
+    puts "* " * i
+  end
+
+for i in 1..n
+    for j in 1..n
+        if i<=j
+            print "* "
+        else
+            print " "
+        end
+    end
+    puts "\n"
+end
+for i in 1..n
+    for j in 1..n
+        if j<=i
+            print "* "
+        else
+            print " "
+        end
+    end
+    puts "\n"
+end
+i=3
+while i>=1 do
+    for j in 1..n
+        if j>=i
+            print "i"
+        else
+            print " "
+        end
+    end
+    i-=1
+    puts "\n"
+end
 
 
 
