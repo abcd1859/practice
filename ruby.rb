@@ -153,7 +153,7 @@ end
 
 
 x1=multiply(3,subtraction(addition(2,2),2))
-puts "#x1"
+puts "#{x1}"
 $i=1
 while $i < 5 do
     puts "#$i"
@@ -226,9 +226,9 @@ i=3
 while i>=1 do
     for j in 1..n
         if j>=i
-            print "i"
+            print " i"
         else
-            print " "
+            print "  "
         end
     end
     i-=1
@@ -242,6 +242,33 @@ i=1
 while i<=3
     puts "* " * i
     i+=1
+end
+
+
+for i in 1..3
+    if i==3
+        puts "#{i}" 
+        break
+    end
+end
+=begin
+s=1
+while s<3 do 
+    if(s==2)         # retry if some condition is met 1) retry 2) redo 3) next 4) break 
+        print "#{s}"
+        redo
+    end
+    print "in while"
+end
+=end
+
+for i in 1..5
+    if i==2
+        puts "#{i}"
+        next
+        puts "skip"
+    end
+    puts "for i loop"
 end
 
 
