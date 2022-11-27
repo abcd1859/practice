@@ -235,5 +235,13 @@ while i>=1 do
     puts "\n"
 end
 
+for i in 1..3
+    print "hello abhishek #{i} \n"
+end
+i=1
+while i<=3
+    puts "* " * i
+    i+=1
+end
 
 
