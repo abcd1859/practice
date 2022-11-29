@@ -7,8 +7,8 @@ BEGIN{
 }
 $global_variable=2759 #Global variable
 
-class Vahicle
-    @@customers=0   #Class variable
+class Vahicle sshree782
+    @@customers=0   # Class variable
     def initialize(id, name , year)
         @vahicle_id=id #instance variable
         @vahicle_name=name
