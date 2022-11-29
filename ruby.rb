@@ -272,3 +272,24 @@ for i in 1..5
 end
 
 
+arrt=[1,2,3,4,5]
+arrt.select {|i| puts "in select #{i}"}
+arrt.map {|values| puts "#{values}"}
+puts "\n"
+arrt.each {|values| puts"#{values}"}
+puts "\n"
+arrt.collect {|ca| puts "#{ca}"}
+
+my_hash = {min: 2, max: 5}
+puts "#{my_hash.keys()}"
+my_hash.each { |key, value| puts "k: #{key}, v: #{value}" }
+my_hash.each_pair {|key , value | puts"#{key}:#{value}"}
+
+hjk={1=>"abhishek",2=>"jean"}
+puts "\n"
+hjk.select { | key,value | puts "#{key} #{value}"}
+puts "shd"
+puts "#{hjk.values()}"
+
+
+
