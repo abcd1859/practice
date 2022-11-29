@@ -290,6 +290,28 @@ puts "\n"
 hjk.select { | key,value | puts "#{key} #{value}"}
 puts "shd"
 puts "#{hjk.values()}"
+art=[3,2,4,7,5]
+(art.length-1).times do |i|
+    if art[i] > art[i+1]
+      art[i],art[i + 1] = art[i + 1],art[i]
+    end
+end
+puts "#{art}"
+arr = [1,5,7,2,3,50,78,34, 1, 15, 89, 8]
+arr.each {|i| puts "#{arr.map {|j| max = i<j ? i : j }}"}
+
+class Bank
+    def initialize()
+        @amount="abhishek"
+        print()
+    end
+    def print
+        puts "#{@amount}"
+    end
+end
+
+obj=Bank.new
+
 
 
 
